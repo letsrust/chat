@@ -1,0 +1,9 @@
+### get index handler
+GET http://localhost:6688/
+Content-Type: application/json
+
+### signin
+POST http://localhost:6688/api/signin
+Content-Type: application/json
+
+{}
