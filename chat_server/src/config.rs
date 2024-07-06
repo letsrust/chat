@@ -21,7 +21,7 @@ impl AppConfig {
                 let config: AppConfig = serde_yaml::from_reader(file)?;
                 config
             }
-            Err(_) => bail!("config file not found"),
+            Err(e) => bail!("config file not found: {:?}", e),
         };
 
         Ok(ret)
