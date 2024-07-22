@@ -1,12 +1,11 @@
 mod config;
 mod handler;
 
+use axum::routing::{get, patch, post};
+use axum::Router;
+
 use std::{ops::Deref, sync::Arc};
 
-use axum::{
-    routing::{get, patch, post},
-    Router,
-};
 pub use config::*;
 
 pub(crate) use handler::*;
